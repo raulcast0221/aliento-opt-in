@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Volunteer Registration | Aliento de Vida-B.I.C</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #121416; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: #1e2124; padding: 30px; border-radius: 12px; border: 1px solid #1b5e20; box-shadow: 0 8px 24px rgba(0,0,0,0.5); width: 100%; max-width: 400px; }
+        h2 { color: #ffffff; margin-top: 0; }
+        label { display: block; margin: 10px 0 5px; color: #a0a0a0; font-size: 0.9rem; }
+        input[type="text"], input[type="tel"] { width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #444; background: #25282c; color: white; box-sizing: border-box; }
+        .consent-section { background: rgba(27, 94, 32, 0.1); padding: 15px; border-radius: 6px; border: 1px solid #1b5e20; margin-bottom: 20px; }
+        .consent-section input { margin-right: 10px; cursor: pointer; }
+        .consent-text { font-size: 0.85rem; line-height: 1.4; color: #e0e0e0; }
+        button { background: #1b5e20; color: white; border: none; padding: 14px; width: 100%; border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #2e7d32; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Volunteer Registration</h2>
+        <p style="color: #c5a059; font-size: 0.9rem; margin-bottom: 20px;">Aliento de Vida Ministry Portal</p>
+        
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter name">
+        
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="+1 (555) 000-0000">
+        
+        <div class="consent-section">
+            <div style="display: flex; align-items: flex-start;">
+                <input type="checkbox" id="sms-consent">
+                <label for="sms-consent" class="consent-text">
+                    <strong>SMS Opt-In:</strong> I agree to receive automated text messages (reminders/updates) from Aliento de Vida-B.I.C at the number provided. Message & data rates may apply. Reply STOP to opt-out.
+                </label>
+            </div>
+        </div>
+        
+        <button type="button">Register as Volunteer</button>
+    </div>
+</body>
+</html>
